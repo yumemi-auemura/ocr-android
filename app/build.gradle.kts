@@ -8,6 +8,7 @@ plugins {
 }
 
 apply(plugin = "dagger.hilt.android.plugin")
+apply(plugin = "androidx.navigation.safeargs.kotlin")
 
 android {
     compileSdkVersion(29)
@@ -68,6 +69,9 @@ dependencies {
     implementation(Dependencies.Epoxy.epoxyDataBinding)
     kapt(Dependencies.Epoxy.epoxyProcessor)
     implementation(Dependencies.Coil.coil)
+    testImplementation(Dependencies.Test.jUnit)
+    androidTestImplementation(Dependencies.AndroidX.Test.jUnit)
+    androidTestImplementation(Dependencies.AndroidX.Test.espresso)
 }
 
 fun NamedDomainObjectContainer<BuildType>.debug(body: BuildType.() -> Unit) {

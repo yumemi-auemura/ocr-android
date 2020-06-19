@@ -5,8 +5,13 @@ private const val constraintLayoutVersion = "1.1.3"
 const val hiltAndroidVersion = "2.28-alpha"
 private const val hiltVersion = "1.0.0-SNAPSHOT"
 private const val lifecycleVersion = "2.2.0"
-private const val navigationVersion = "2.3.0-beta01"
+const val navigationVersion = "2.3.0-rc01"
 const val gradleVersion = "4.0.0"
+private const val epoxyVersion = "4.0.0-beta4"
+private const val coilVersion = "0.11.0"
+private const val jUnitExtVersion = "1.1.1"
+private const val espressoVersion = "3.2.0"
+private const val jUnitVersion = "4.13"
 
 object Dependencies {
 
@@ -23,6 +28,11 @@ object Dependencies {
         const val lifecycleViewModelSavedState = "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycleVersion"
         const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
         const val navigationUi = "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+
+        object Test {
+            const val jUnit = "androidx.test.ext:junit:$jUnitExtVersion"
+            const val espresso = "androidx.test.espresso:espresso-core:$espressoVersion"
+        }
     }
 
     object Hilt {
@@ -37,12 +47,16 @@ object Dependencies {
     }
 
     object Epoxy {
-        const val epoxy = "com.airbnb.android:epoxy:4.0.0-beta4"
-        const val epoxyProcessor = "com.airbnb.android:epoxy-processor:4.0.0-beta4"
-        const val epoxyDataBinding = "com.airbnb.android:epoxy-databinding:4.0.0-beta4"
+        const val epoxy = "com.airbnb.android:epoxy:$epoxyVersion"
+        const val epoxyProcessor = "com.airbnb.android:epoxy-processor:$epoxyVersion"
+        const val epoxyDataBinding = "com.airbnb.android:epoxy-databinding:$epoxyVersion"
     }
 
     object Coil {
-        const val coil = "io.coil-kt:coil:0.11.0"
+        const val coil = "io.coil-kt:coil:$coilVersion"
+    }
+
+    object Test {
+        const val jUnit = "junit:junit:$jUnitVersion"
     }
 }
