@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.airbnb.epoxy.stickyheader.StickyHeaderLinearLayoutManager
 import com.github.auemura.ocr.R
 import com.github.auemura.ocr.databinding.FragmentHomeBinding
 import com.github.auemura.ocr.ext.viewBinding
@@ -17,7 +18,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val controller = HomeEpoxyController()
+        val controller = HomeEpoxyController(requireContext())
+        binding.homeEpoxyRecyclerView.layoutManager = StickyHeaderLinearLayoutManager(requireContext())
         binding.homeEpoxyRecyclerView.setController(controller)
         controller.setData(viewModel.getBooks())
     }

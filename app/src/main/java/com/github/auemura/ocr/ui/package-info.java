@@ -1,5 +1,6 @@
 @EpoxyDataBindingLayouts({
-                                 R.layout.view_home_item
+                                 R.layout.view_home_item,
+                                 R.layout.view_home_logo,
                          })
 package com.github.auemura.ocr.ui;
 
