@@ -7,19 +7,19 @@
     app:startDestination="@id/homeFragment"
     >
 
-    <fragment
+    <keep_state_fragment
         android:id="@+id/homeFragment"
         android:name="com.github.auemura.ocr.ui.home.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"
         />
-    <fragment
+    <keep_state_fragment
         android:id="@+id/dummyFragment"
         android:name="com.github.auemura.ocr.ui.dummy.DummyFragment"
         android:label="DummyFragment"
         tools:layout="@layout/fragment_dummy"
         />
-    <fragment
+    <keep_state_fragment
         android:id="@+id/dummyFragment2"
         android:name="com.github.auemura.ocr.ui.dummy.DummyFragment"
         android:label="DummyFragment2"
