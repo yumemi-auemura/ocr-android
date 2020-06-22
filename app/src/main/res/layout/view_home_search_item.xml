@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/item_motion_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="18dp"
-    android:background="@color/colorPrimary"
-    android:elevation="2dp"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#F3ECE3"
     >
 
-    <TextView
-        android:id="@+id/title_text_view"
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/item_search_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
-        android:padding="20dp"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
+        android:layout_marginHorizontal="16dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
