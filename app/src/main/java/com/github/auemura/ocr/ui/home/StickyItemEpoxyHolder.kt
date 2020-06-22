@@ -1,6 +1,6 @@
 package com.github.auemura.ocr.ui.home
 
-import android.widget.TextView
+import androidx.appcompat.widget.SearchView
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
@@ -17,11 +17,10 @@ abstract class StickyItemEpoxyHolder : EpoxyModelWithHolder<StickyItemEpoxyHolde
     lateinit var title: String
 
     override fun bind(holder: StickyHolder) {
-        holder.titleView.text = title
-        holder.titleView.setOnClickListener { listener() }
+        holder.searchView.setOnClickListener { listener }
     }
 
     class StickyHolder : KotlinEpoxyHolder() {
-        val titleView by bind<TextView>(R.id.title_text_view)
+        val searchView by bind<SearchView>(R.id.item_search_view)
     }
 }

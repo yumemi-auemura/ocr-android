@@ -1,7 +1,7 @@
 const val kotlinVersion = "1.3.72"
 private const val coreVersion = "1.3.0"
 private const val appCompatVersion = "1.1.0"
-private const val constraintLayoutVersion = "1.1.3"
+private const val constraintLayoutVersion = "2.0.0-beta4"
 const val hiltAndroidVersion = "2.28-alpha"
 private const val hiltVersion = "1.0.0-SNAPSHOT"
 private const val lifecycleVersion = "2.2.0"
